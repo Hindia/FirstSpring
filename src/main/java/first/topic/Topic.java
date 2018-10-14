@@ -1,8 +1,14 @@
 package first.topic;
 
-public class Topic {
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Topic {	//becomes a table because of the annotation entity
 	
-	private String id, name, description;
+	@Id
+	private String id;
+	private String name, description;
 	
 	public Topic(){}
 	

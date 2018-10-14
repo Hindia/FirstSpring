@@ -2,6 +2,7 @@ package first.course;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 import first.topic.Topic;
 
@@ -12,6 +13,7 @@ public class Course {	//becomes a table because of the annotation entity
 	private String id;
 	private String name, description;
 	
+	@ManyToOne	//since the relation is many courses to a topic
 	private Topic topic;
 	
 	public Course(){}

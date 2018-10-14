@@ -12,9 +12,9 @@ public class CourseService {
 	@Autowired
 	private CourseRepository courseRepository;	//so spring injects the instance of topicRepo here in the service
 	
-	public List<Course> getAllTopics(){
+	public List<Course> getAllCourses(String topicId){
 		List<Course> courses= new ArrayList<>();
-		courseRepository.findAll().forEach(courses::add);	//adds to topics list topic objects from topicRepo
+		courseRepository.findByTopicId(topicId).forEach(courses::add);	//adds to courses list topic objects from courseRepo
 		return courses;
 		}
 	

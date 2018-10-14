@@ -19,7 +19,7 @@ public class CourseController {
 	
 	@RequestMapping("/topics/{id}/courses")
 	public List<Course> getAllCourse(@PathVariable String id ){
-		return courseService.getAllTopics();
+		return courseService.getAllCourses(id);
 	
 	}
 	

@@ -1,7 +1,7 @@
-# FirstSpring
+# FirstSpringBootApplication
 a standalone application which lets you CRUD(Create Read Update Delete) data in a database
 
-Run course-0.0.1-SNAPSHOT.jar in the course folder to start the application (java -jar [path to course-0.0.1-SNAPSHOT.jar])
+Run course-0.0.1-SNAPSHOT.jar in your command prompt to start the application (java -jar [path to course-0.0.1-SNAPSHOT.jar])
 
 The program runs on localhost on port 8080 (127.0.0.1:8080)
 
